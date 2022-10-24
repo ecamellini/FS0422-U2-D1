@@ -32,8 +32,15 @@ function sortScoresByScore(scoreObject1, scoreObject2) {
   }
 }
 
-
-
+// In case you want, instead, to sort by name:
+function sortScoresByName(scoreObject1, scoreObject2) {
+  if (scoreObject1.name < scoreObject2.name) {
+    return -1;
+  } else {
+    return +1;
+  }
+}
+// Then you can call scores.sort(sortScoresByName)
 
 // This is a function, so the name shall be a VERB
 function visualizeScores() {

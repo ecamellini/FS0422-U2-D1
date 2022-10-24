@@ -40,7 +40,7 @@ function visualizeScores() {
 
   // Here we are sorting the scores array using as sorting function
   // the function sortScores as defined above.
-  let sortedScores = scores.sort(sortScores)
+  let sortedScores = scores.sort(sortScoresByScore)
 
   // We could also have defined the function here, inline, inside
   // the sort parameter.

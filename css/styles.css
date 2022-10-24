@@ -22,4 +22,15 @@
   padding: 5px;
   margin-bottom: 5px;
   list-style: none;
+
+  /* Display flex tells the browser that
+    the CHILDREN of this element will be displayed
+    according to the flex properties we set.
+  */
+  display: flex;
+
+  /* Flex property to manage
+  how elements are positioned on the line.
+  */
+  justify-content: space-between;
 }

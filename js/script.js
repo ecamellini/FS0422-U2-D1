@@ -21,10 +21,41 @@ let scores = [ // In the real world this list here will come from somewhere else
 ]
 
 
+function sortScoresByScore(scoreObject1, scoreObject2) {
+  // This is a function that takes 2 NUMBERS.
+  // Returns +1 if the first number is < the second one.
+  // Returns -1 if the first number >= the second one.
+  if (scoreObject1.score < scoreObject2.score) {
+    return +1;
+  } else {
+    return -1;
+  }
+}
+
+
+
+
 // This is a function, so the name shall be a VERB
 function visualizeScores() {
+
+  // Here we are sorting the scores array using as sorting function
+  // the function sortScores as defined above.
+  let sortedScores = scores.sort(sortScores)
+
+  // We could also have defined the function here, inline, inside
+  // the sort parameter.
+  // let sortedScores = scores.sort(
+  //   (scoreObject1, scoreObject2) => {
+  //     if(scoreObject1.score > scoreObject2.score) {
+  //       return -1
+  //     } else {
+  //       return +1
+  //     }
+  //   }
+  // )
+
   // 1) For each element inside the array of scores...
-  for (let scoreObject of scores) {
+  for (let scoreObject of sortedScores) {
     // 2) create the tags that we need (li, span, span, etc.)
     // and: customize the tags adding some classes, some text, ewtc.
     let li = document.createElement("li")

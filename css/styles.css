@@ -34,3 +34,11 @@
   */
   justify-content: space-between;
 }
+
+.good-score {
+  background-color: lime;
+}
+
+.bad-score {
+  background-color: tomato;
+}

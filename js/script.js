@@ -15,6 +15,9 @@ let scores = [ // In the real world this list here will come from somewhere else
   { name: "Paolo", score: 99},
   { name: "Barack", score: 66},
   { name: "George", score: 75},
+  { name: "Joe", score: 33},
+  { name: "Jake", score: 45},
+  { name: "Victor", score: 10},
 ]
 
 
@@ -37,6 +40,12 @@ function visualizeScores() {
 
     li.appendChild(nameSpan)
     li.appendChild(scoreSpan)
+
+    if (  scoreObject.score >= 60  ) {
+      li.classList.add('good-score')
+    } else {
+      li.classList.add('bad-score')
+    }
 
     // 3) appending them to the ol, to their parent
     let ol = document.getElementById('scoreboard-list')

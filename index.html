@@ -15,8 +15,40 @@
 </head>
 
 <body>
-  <h1>Hello everybody!</h1>
-  <button>This is a button</button>
+  <!--
+    We want to visualize a scoreboard.
+    Imagine you have different entitities that are competing.
+    For example, different players playing a game.
+    Now, each one of these entities has a score - and we want to visualize
+    a scoreboard, i.e., a list of the current scores.
+
+    Also, we want to have a way to choose sorting: we can sort by score
+    or by alphabetical order.
+  -->
+  <div id="container">
+
+    <h1>Scoreboard</h1>
+
+    <ol id="scoreboard-list">
+      <!--
+      These elements, the scores, the list elements
+      will be displayed dynamically using JS.
+    -->
+      <li class="scoreboard-line">
+        <div>
+          <span>Eric</span>
+          <span>100</span>
+        </div>
+      </li>
+
+      <li class="scoreboard-line">
+        <div>
+          <span>Tim</span>
+          <span>90</span>
+        </div>
+      </li>
+    </ol>
+  </div>
 </body>
 
 </html>
